@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+</head>
+
+<body>
+    <div class="container d-flex align-items-center justify-content-center align-self-center">
+        <div class = "d-flex flex-column border border-white align-items-center justify-content-center p-5"><h1>Welcome to the Number Guessing Game</h1>
+            <p>INSTRUCTIONS: You have 3 chances to guess the number! It is a number from 1-100. You have 10 seconds to guess. If you do not guess in 10 seconds, you will lose a chance! Press the Start! button below to play!</p>
+            <button id="startButton" class="m-2 btn-primary">Start!</button>
+            <div id="chanceArea" class="m-2"></div>
+            <input type="number" id="userInput" class="m-2"/>
+            <button id="guessButton" class="m-2 btn-dark">Guess!</button>
+            <button id="resetButton" class="m-2 btn-dark">Try Again!</button>
+            <div id="resultArea"></div>
+            <div id="historyArea">Past Guesses:</div>
+            <div id="timecount"></div>
+            <div>History: <span id="yourGameHistory"></span></div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
